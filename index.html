@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>yoon_bg</title>
     <style>
-    /* --- 기본 및 공통 스타일 --- */
     * {
       margin: 0;
       padding: 0;
@@ -37,7 +36,6 @@
       position: relative;
     }
 
-    /* --- 배경 이미지 --- */
     .bg_part1 { background-image: url(image/aladin_bg/bg_aladin-01.png); background-size: 100% 100%;} 
     .bg_part2 { background-image: url(image/aladin_bg/bg_aladin-02.png); background-size: 100% 100%;}
     .bg_part3 { background-image: url(image/aladin_bg/bg_aladin-03.png); background-size: 100% 100%;}
@@ -53,7 +51,6 @@
     }
 
 
-    /* --- 내비게이션 바 (GNB) --- */
     .GNB{
       width: 1320px;
       height: 50px;
@@ -210,7 +207,6 @@
         transform: scale(1.2);
     }
 
-    /* --- 만권당 섹션 스타일 --- */
     .mankwondang_box {
        background: white;           
       border-radius: 20px;         
@@ -259,7 +255,6 @@
       display: inline-block;
     }
 
-    /* --- 일반 콘텐츠 섹션 스타일 --- */
     .content-box {
       background-color: rgba(255, 255, 255, 0.9);
       padding: 60px;
@@ -296,19 +291,16 @@
       opacity: 1;
     }
 
-    /* 섹션 전체 스타일 */
 .store-finder-section {
     width: 90%;
     max-width: 1000px;
     margin: 40px auto;
     padding: 30px;
-    background-color: #ffffff; /* 짙은 남색 배경 */
-    border-radius: 20px; /* 모서리를 둥글게 */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* 깊은 그림자 */
-    color: #e0e0e0; /* 밝은 회색 텍스트 */
+    background-color: #ffffff; 
+    border-radius: 20px; 
+    color: #e0e0e0; 
 }
 
-/* 제목 스타일 */
 .store-finder-section h2 {
     text-align: center;
     font-size: 2.5em;
@@ -316,7 +308,6 @@
     margin-bottom: 20px;
 }
 
-/* 설명 문구 스타일 */
 .store-finder-section p {
     text-align: center;
     font-size: 1.1em;
@@ -324,27 +315,23 @@
     margin-bottom: 40px;
 }
 
-/* 지역별 매장 컨테이너 스타일 */
 .store-region {
-    border: 1px solid #3a3f6a; /* 옅은 테두리 */
+    border: 1px solid #3a3f6a; 
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 25px;
 }
 
-/* 지역명 (서울, 경기 등) 스타일 */
 .store-region h3 {
     display: inline-block;
-    color: #000000; /* 금빛 노란색 */
+    color: #000000; 
     font-size: 1.5em;
     margin-right: 20px;
-    text-shadow: 0 0 8px rgba(255, 204, 0, 0.5); /* 빛나는 효과 */
 }
 
-/* 매장명 링크 스타일 */
 .store-link {
     display: inline-block;
-    background-color: #8A2BE2; /* 남색 배경 */
+    background-color: #8A2BE2; 
     color: #e0e0e0;
     padding: 8px 15px;
     margin: 5px;
@@ -354,22 +341,19 @@
     border: 1px solid #8A2BE2;
 }
 
-/* 매장명에 마우스를 올렸을 때 효과 */
 .store-link:hover {
     background-color: #8A2BE2;
     color: #ffcc00;
 }
 
-/* 지도 보기 버튼 컨테이너 */
 .map-link-container {
     text-align: center;
     margin-top: 40px;
 }
 
-/* 지도 보기 버튼 스타일 */
 .map-link {
     display: inline-block;
-    background-color: #5d5d88; /* 보라색 계열 */
+    background-color: #5d5d88; 
     color: #fff;
     padding: 12px 25px;
     border-radius: 30px;
@@ -379,19 +363,15 @@
     transition: transform 0.3s ease;
 }
 
-/* 지도 보기 버튼에 마우스를 올렸을 때 효과 */
 .map-link:hover {
     transform: translateY(-3px);
 }
 
-/* 이미지 아이콘 스타일 */
 .map-link img {
-    height: 1.2em; /* 텍스트 크기에 맞춰 조정 */
+    height: 1.2em; 
     margin-right: 8px;
     vertical-align: middle;
 }
-    
-
     
 .goods_carousel_container {
     width: 90%;
@@ -467,23 +447,35 @@
 .event_wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 24px; 
   justify-content: center;
 }
 
-.event_item{ 
-    flex: 0 0 calc(50% - 12px);
-    box-sizing: border-box;
-    background-color: rgb(251, 255, 0);
-    border: 1px solid rgb(251, 255, 0);
-    border-radius: 200px;
-    display: flex;              
-    flex-direction: column;    
-    justify-content: center;    
-    align-items: center;        
-    text-align: center;         
-    padding: 20px;             
-    min-height: 200px;          
+.event_item {
+  flex: 0 0 calc(50% - 12px);
+  box-sizing: border-box;
+  background-color: #fff; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 30px; 
+  text-align: center;
+  transition: transform 0.3s ease; 
+}
+
+.event_item:hover {
+  transform: translateY(-5px); 
+}
+
+.event_item h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.event_item p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
 }
 
 .bg_part5 {
@@ -606,6 +598,84 @@
     .funding_grid {
         grid-template-columns: 1fr;
     }
+}
+
+.main_footer {
+    width: 100%;
+    background-color: #000;
+    padding: 30px 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer_content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_info_wrap {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.footer_info {
+    text-align: left;
+    line-height: 1.6;
+}
+
+.footer_info p {
+    margin-bottom: 5px;
+    color: #a0a0a0;
+}
+
+.footer_contact {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer_contact h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact_buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contact_buttons a {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.contact_buttons a:hover {
+    background-color: #555;
+}
+
+.footer_nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer_nav a:hover {
+    color: #8A2BE2; 
 }
  
     </style>
@@ -893,6 +963,36 @@
   <section class="bg_section bg_part8" id="sec8">
     <video src="image/video/aladin.mp4" controls autoplay muted width="1200" style="border-radius: 15px;"></video>
   </section>
+
+  <footer class="main_footer">
+    <div class="footer_content">
+        <div class="footer_info_wrap">
+            <div class="footer_info">
+                <h4>(주)알라딘커뮤니케이션</h4>
+                <p>
+                    서울시 서대문구 충정로 1가 78-4번지 | 사업자등록 211-81-23094 | 통신판매업신고 2005-서울중구-0520
+                </p>
+                <p>
+                    대표이사 최원영 | 개인정보보호책임자 김기정 | 이메일 privacy@aladin.co.kr
+                </p>
+                <p>
+                    ⓒ Aladdin Communication. All Rights Reserved.
+                </p>
+            </div>
+            <div class="footer_contact">
+                <h4>고객센터 1544-2514</h4>
+                <div class="contact_buttons">
+                    <a href="#">1:1 문의</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_nav">
+            <a href="#">회사소개</a> | <a href="#">이용약관</a> | <a href="#">개인정보처리방침</a> | <a href="#">고객센터</a>
+        </div>
+    </div>
+</footer>
+
 </div>
 <script src="yoon.js"></script>
 
