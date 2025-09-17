@@ -84,31 +84,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setCarouselDimensions();
 
-    // 🌟 여기부터 새로운 코드가 추가된 부분입니다. 🌟
-    // 로고를 찾아서 'active' 클래스를 추가하여 나타나게 합니다.
     const mainLogo = document.querySelector('#main_logo');
     if (mainLogo) {
         mainLogo.classList.add('active');
     }
 });
 
-// 만권당 섹션의 캐릭터 애니메이션을 위한 IntersectionObserver
-const manCha = document.querySelector('#man_cha');
-const mankwondangSection = document.querySelector('#sec3');
-
-const animationCallback = (entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      manCha.classList.add('active');
-    } else {
-      manCha.classList.remove('active');
-    }
-  });
-};
-
-const observerOptions = {
-  threshold: 0.1
-};
-
-const observer = new IntersectionObserver(animationCallback, observerOptions);
-observer.observe(mankwondangSection);
